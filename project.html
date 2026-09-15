@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Proposed course project for MIT 16.S893.">
+  <title>Course Project — Field Notes / 16.S893</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <a class="site-mark" href="index.html" aria-label="Field Notes home">
+      <span class="site-mark__symbol" aria-hidden="true">◉</span>
+      <span>FIELD / 16.S893</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="project.html" aria-current="page">Course project</a>
+    </nav>
+  </header>
+
+  <main id="main-content" class="page-shell interior-page">
+    <header class="page-intro page-intro--project">
+      <div>
+        <p class="eyebrow"><span>Page 02</span><span>Project proposal</span></p>
+        <h1>Course <em>project.</em></h1>
+      </div>
+      <p class="page-intro__note">A preliminary 16.S893 idea connecting LLMs with flow-mechanism analysis in CFD.</p>
+    </header>
+
+    <div class="project-title-card">
+      <span class="project-title-card__status"><i aria-hidden="true"></i> Initial idea / under discussion</span>
+      <!-- CONTENT START: Project title and summary -->
+      <div>
+        <p class="section-index">Working title</p>
+        <h2>LLMs for exploring flow analysis methods.</h2>
+        <p>An early idea to use LLMs to automate the exploration of methods an AI agent could use to recognize flow mechanisms in CFD solutions.</p>
+      </div>
+      <!-- CONTENT END: Project title and summary -->
+      <span class="project-title-card__code" aria-hidden="true">P–893</span>
+    </div>
+
+    <div class="content-layout">
+      <aside class="content-rail" aria-label="Page sections">
+        <p>Proposal map</p>
+        <ol>
+          <li><a href="#question">Question</a></li>
+          <li><a href="#proposal">Approaches</a></li>
+          <li><a href="#outcomes">Course idea</a></li>
+        </ol>
+      </aside>
+
+      <article class="content-stack">
+        <!-- CONTENT START: Project question and context -->
+        <section class="content-section" id="question">
+          <p class="section-index">01 / Question + context</p>
+          <h2>How should an AI agent recognize flow mechanisms?</h2>
+          <div class="prose">
+            <p><strong>In my new AI-agent project, one of the most important tasks is determining which method is best for identifying flow mechanisms within CFD solutions.</strong></p>
+            <p>The direction is not yet concrete and is still under discussion with my advisor, but it creates an opportunity to explore how LLMs might help investigate the question itself.</p>
+          </div>
+        </section>
+        <!-- CONTENT END: Project question and context -->
+
+        <!-- CONTENT START: Proposed concept -->
+        <section class="content-section" id="proposal">
+          <p class="section-index">02 / Possible approaches</p>
+          <h2>Explore beyond the human workflow.</h2>
+          <div class="prose">
+            <p>One possibility is to emulate how a human expert analyzes a solution: make a hypothesis, analyze the data, and perhaps run more cases under different conditions to confirm or rule out that hypothesis.</p>
+            <p>An AI agent may also be capable of—and perhaps better suited to—methods that human experts do not typically use. We want to explore many possibilities, including:</p>
+            <ul>
+              <li><strong>Human-style analysis</strong> — Form hypotheses, inspect data, and run additional cases.</li>
+              <li><strong>Adjoint calculations</strong> — Examine the sensitivity of flow variables.</li>
+              <li><strong>Simplified comparisons</strong> — Match RANS CFD solutions with solutions using source and sink terms to view the case through another lens.</li>
+            </ul>
+          </div>
+        </section>
+        <!-- CONTENT END: Proposed concept -->
+
+        <!-- CONTENT START: Course project direction -->
+        <section class="content-section" id="outcomes">
+          <p class="section-index">03 / Course project idea</p>
+          <h2>Automate the exploration itself.</h2>
+          <div class="prose">
+            <p>For 16.S893, I could use LLMs to automate the exploration of these analysis methods. The goal would be to investigate which approaches an AI agent could use rather than committing in advance to the process a human expert would follow.</p>
+            <p>This is ambitious, but it would be interesting to see what is possible.</p>
+          </div>
+        </section>
+        <!-- CONTENT END: Course project direction -->
+      </article>
+    </div>
+
+    <nav class="next-page" aria-label="Return to first page">
+      <span>Return to field note</span>
+      <a href="about.html"><span aria-hidden="true">←</span> About</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer page-shell">
+    <p>Portfolio field notes <span aria-hidden="true">/</span> MIT 16.S893</p>
+    <p class="footer-status"><span aria-hidden="true"></span> Assignment 01 / Working draft</p>
+    <button class="footer-orbit" type="button" aria-label="Decorative orbit marker">
+      <span aria-hidden="true"></span>
+    </button>
+  </footer>
+  <div class="egg-announcer" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

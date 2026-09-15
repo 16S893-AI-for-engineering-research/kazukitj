@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A portfolio-style workspace for MIT 16.S893 Assignment 1.">
+  <title>Field Notes — 16.S893</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <a class="site-mark" href="index.html" aria-label="Field Notes home">
+      <span class="site-mark__symbol" aria-hidden="true">◉</span>
+      <span>FIELD / 16.S893</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="project.html">Course project</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero page-shell" aria-labelledby="home-title">
+      <div class="hero__copy">
+        <p class="eyebrow"><span>MIT 16.S893</span><span>Assignment 01</span></p>
+        <h1 id="home-title">A workspace for<br><em>ideas in motion.</em></h1>
+
+        <!-- CONTENT START: Landing page summary -->
+        <div class="intro-copy intro-copy--hero">
+          <strong>KAZUKI / AEROASTRO</strong>
+          <p>I’m a third-year PhD student studying aerospace propulsion thermofluids. This site introduces my research interests and an early idea for my 16.S893 course project.</p>
+        </div>
+        <!-- CONTENT END: Landing page summary -->
+
+        <div class="button-row" aria-label="Explore the site">
+          <a class="button button--primary" href="about.html">Read the introduction <span aria-hidden="true">↗</span></a>
+          <a class="button button--quiet" href="project.html">View the proposal <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="orbit-stage" aria-label="Animated orbital diagram representing ideas in motion">
+        <div class="orbit-stage__grid" aria-hidden="true"></div>
+        <div class="scan-line" aria-hidden="true"></div>
+        <div class="orbit orbit--outer" aria-hidden="true"><span class="orbit__node">03</span></div>
+        <div class="orbit orbit--middle" aria-hidden="true"><span class="orbit__node">02</span></div>
+        <div class="orbit orbit--inner" aria-hidden="true"><span class="orbit__node">01</span></div>
+        <div class="orbit-core">
+          <span class="orbit-core__index">A–01</span>
+          <strong>OBSERVE<br>PROPOSE<br>MAKE</strong>
+          <span class="orbit-core__status"><i aria-hidden="true"></i> ACTIVE FIELD</span>
+        </div>
+        <span class="axis-label axis-label--x" aria-hidden="true">X / 893</span>
+        <span class="axis-label axis-label--y" aria-hidden="true">Y / 016</span>
+      </div>
+    </section>
+
+    <section class="route-section page-shell" aria-labelledby="routes-title">
+      <div class="section-heading">
+        <p class="eyebrow">Site index</p>
+        <h2 id="routes-title">Two routes through the work.</h2>
+      </div>
+      <div class="route-grid">
+        <a class="route-card" href="about.html">
+          <span class="route-card__number">01</span>
+          <div>
+            <p class="route-card__label">Introduction</p>
+            <h3>About</h3>
+            <p>Meet Kazuki and learn about his work in aerospace propulsion, CFD, and AI-assisted research.</p>
+          </div>
+          <span class="route-card__arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="route-card route-card--accent" href="project.html">
+          <span class="route-card__number">02</span>
+          <div>
+            <p class="route-card__label">16.S893</p>
+            <h3>Course project</h3>
+            <p>Explore an early idea for using LLMs to investigate methods for flow-mechanism extraction.</p>
+          </div>
+          <span class="route-card__arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer page-shell">
+    <p>Portfolio field notes <span aria-hidden="true">/</span> MIT 16.S893</p>
+    <p class="footer-status"><span aria-hidden="true"></span> Assignment 01 / Working draft</p>
+    <button class="footer-orbit" type="button" aria-label="Decorative orbit marker">
+      <span aria-hidden="true"></span>
+    </button>
+  </footer>
+  <div class="egg-announcer" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
