@@ -62,6 +62,27 @@ Expand `Proposed concept` with further analysis methods, technical detail, const
 
 Expand `Course project direction` after the project format, process, and intended outcomes are decided. Milestones, references, and visuals can be added within this marked section or as new marked sections.
 
+## `dev-log.html`
+
+### Dev-log overview
+
+Update `Dev-log overview` when the logging method or summary counts change. Keep the interaction count synchronized with the number of entries.
+
+### Dev-log entries
+
+Add each new interaction to the top of `Dev-log entries`, using the existing articles as a template. Give every article a unique descending ID (`entry-003`, `entry-004`, and so on), a valid `<time datetime="YYYY-MM-DD">`, and four clear disclosures:
+
+- the agent or tool used;
+- what you asked it to do;
+- how it contributed;
+- your role, verification, and reflection.
+
+Also update the in-page navigation and summary count whenever an entry is added. Keep prompt descriptions concise and remove private or sensitive information before publishing.
+
+### Dev-log principles
+
+Edit `Dev-log principles` only if the disclosure and review protocol changes.
+
 ## Review checklist
 
 - Confirm that all statements remain accurate.
