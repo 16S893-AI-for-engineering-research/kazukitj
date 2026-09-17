@@ -77,7 +77,7 @@ Add each new interaction to the top of `Dev-log entries`, using the existing art
 - how it contributed;
 - your role, verification, and reflection.
 
-Also update the in-page navigation and summary count whenever an entry is added. Keep prompt descriptions concise and remove private or sensitive information before publishing.
+Also update the in-page navigation and summary count whenever an entry is added. Keep prompt descriptions concise and remove private or sensitive information before publishing. When reporting Pi session activity, count user-role message records as messages typed and assistant `toolCall` content items as tool calls; include the relevant session dates and timezone.
 
 ### Dev-log principles
 

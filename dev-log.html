@@ -89,30 +89,42 @@
             </div>
             <div>
               <dt>Mode</dt>
-              <dd>Planning, coding, and verification</dd>
+              <dd>Planning, coding, session analysis, and verification</dd>
             </div>
             <div>
               <dt>Artifact</dt>
-              <dd>This page and site-wide navigation</dd>
+              <dd>Dev-log page and its first two session records</dd>
             </div>
           </dl>
+
+          <div class="session-counts" aria-label="Session activity counts">
+            <div>
+              <strong>4</strong>
+              <span>Messages I typed</span>
+            </div>
+            <div>
+              <strong>55</strong>
+              <span>Tool calls the agent made</span>
+            </div>
+          </div>
+          <p class="session-counts__note">Counted from this Pi session record, including the calls used to prepare this entry: 35 shell calls, 10 edits, 9 file reads, and 1 file write. The session took place on 16 September 2026 EDT (17 September UTC), beginning at 21:03 EDT.</p>
 
           <div class="log-entry__body">
             <section>
               <h3>What I asked</h3>
-              <p>I asked the coding agent to create a Dev-log page where I can record the ways I use AI agents during the course.</p>
+              <p>I asked the agent to add a Dev-log to the portfolio, commit and push it, examine an earlier Pi session, and turn that session into the first retrospective entry. I then asked it to document this current session as the second entry.</p>
             </section>
             <section>
               <h3>How the agent helped</h3>
-              <p>The agent inspected the existing static site, reused its visual and semantic patterns, created this page, connected it to every page, and added responsive styles for the log entries.</p>
+              <p>The agent inspected the existing site, created and styled the Dev-log page, added it to the site-wide navigation, and wrote a guide for future updates. It then parsed the earlier session record to count messages and tool calls, expanded the initial-website entry with those metrics and a fuller summary, and performed link and formatting checks.</p>
             </section>
             <section>
               <h3>My role + reflection</h3>
-              <p>I defined the need for the page and remain responsible for checking the accuracy of each disclosure. Using the agent made it possible to integrate the feature consistently across the site rather than treating the log as a disconnected add-on.</p>
+              <p>I defined what the log needed to disclose and progressively asked for more precise evidence. This session showed that an agent can document its own workflow by reading structured session history, but the scope and framing of each entry still came from my requests. The commit succeeded locally; the attempted GitHub push was blocked by the environment’s network proxy.</p>
             </section>
           </div>
 
-          <p class="log-entry__outcome"><span>Outcome</span> A reusable format for documenting future AI-assisted work.</p>
+          <p class="log-entry__outcome"><span>Outcome</span> A site-integrated Dev-log with two dated entries, reproducible session counts, reflective summaries, and a reusable format for future AI-assisted work.</p>
         </article>
 
         <article class="log-entry" id="entry-001">
@@ -131,7 +143,7 @@
             </div>
             <div>
               <dt>Mode</dt>
-              <dd>Design and implementation</dd>
+              <dd>Planning, design, implementation, and validation</dd>
             </div>
             <div>
               <dt>Artifact</dt>
@@ -139,22 +151,34 @@
             </div>
           </dl>
 
+          <div class="session-counts" aria-label="Session activity counts">
+            <div>
+              <strong>3</strong>
+              <span>Messages I typed</span>
+            </div>
+            <div>
+              <strong>37</strong>
+              <span>Tool calls the agent made</span>
+            </div>
+          </div>
+          <p class="session-counts__note">Counted directly from the Pi session record: 17 shell calls, 7 file reads, 7 file writes, and 6 edits. The session record spans 15 September 2026, 03:02–12:15 UTC. The three user messages and resulting build occurred from 11:47–12:15 UTC (07:47–08:15 EDT), and the initial site was committed at 08:19 EDT.</p>
+
           <div class="log-entry__body">
             <section>
               <h3>What I asked</h3>
-              <p>I used an AI coding agent to turn my introduction and preliminary project idea into a small course website.</p>
+              <p>I asked the agent to create a lightweight, multi-page portfolio from scratch for Assignment 01. I set boundaries around the repository and publishing, approved its proposed structure, and then supplied concise facts for the About and Course project pages.</p>
             </section>
             <section>
               <h3>How the agent helped</h3>
-              <p>The agent developed the page structure, visual system, responsive layouts, and lightweight interactions in HTML, CSS, and JavaScript.</p>
+              <p>The agent first inspected the empty repository and proposed an “orbital field notebook” direction. After approval, it built the HTML, responsive visual system, animated orbital diagram, hidden satellite Easter egg, and content guide; it then replaced the placeholders with my supplied content and validated the site.</p>
             </section>
             <section>
               <h3>My role + reflection</h3>
-              <p>I supplied the personal and research context that shaped the content and direction. The process showed how an agent can move quickly from source material to a coherent implementation, while still requiring me to verify that the result represents my work accurately.</p>
+              <p>I established the constraints, approved the design before implementation, and provided the personal and research claims. The session showed that explicit boundaries and a staged approval step can keep a large agent-built artifact aligned with my intent, while final factual and visual review remains my responsibility.</p>
             </section>
           </div>
 
-          <p class="log-entry__outcome"><span>Outcome</span> A working foundation that can grow with the course.</p>
+          <p class="log-entry__outcome"><span>Outcome</span> Three connected pages, shared responsive styling, a visible animation, an Easter egg, and a guide for future content updates.</p>
         </article>
         <!-- CONTENT END: Dev-log entries -->
 
