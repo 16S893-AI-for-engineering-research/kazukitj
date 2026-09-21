@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A transparent record of AI-agent use throughout MIT 16.S893.">
+  <meta name="description" content="A chronological record of meaningful work throughout MIT 16.S893, including reflective documentation of AI-agent contributions.">
   <title>Dev-log — Field Notes / 16.S893</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/site.js" defer></script>
@@ -30,25 +30,25 @@
         <p class="eyebrow"><span>Page 03</span><span>Process record</span></p>
         <h1>Dev-<em>log.</em></h1>
       </div>
-      <p class="page-intro__note">A living record of where AI agents enter my work, what they contribute, and what I learn from using them.</p>
+      <p class="page-intro__note">A chronological record of meaningful work throughout 16.S893, including where AI agents contribute and what I learn from the process.</p>
     </header>
 
     <!-- CONTENT START: Dev-log overview -->
     <section class="log-overview" id="purpose" aria-labelledby="purpose-title">
       <div>
         <p class="section-index">Log protocol / 001</p>
-        <h2 id="purpose-title">Document the process, not just the output.</h2>
+        <h2 id="purpose-title">Document the course process, not every prompt.</h2>
       </div>
       <div class="prose">
-        <p>I will use this page throughout 16.S893 to document meaningful interactions with AI agents. Each entry records the task, the tool, the agent’s contribution, and my own role in directing and evaluating the work.</p>
-        <p>The aim is not simply to list prompts. It is to reflect on when an agent was useful, where its output needed judgment or revision, and how the collaboration affected the result.</p>
+        <p>I will use this page as a chronological record of meaningful work throughout 16.S893. It is selective rather than exhaustive: entries mark assignments, projects, and workflow developments worth reflecting on, not every interaction with an AI agent.</p>
+        <p>When an agent contributes, I record the task, the tool, its contribution, and my own role in directing and evaluating the work. The aim is to reflect on what changed, where the output needed judgment or revision, and what I learned from the process.</p>
       </div>
     </section>
 
     <div class="log-summary" aria-label="Current dev-log summary">
       <div>
-        <span class="log-summary__value">02</span>
-        <span class="log-summary__label">Interactions logged</span>
+        <span class="log-summary__value">03</span>
+        <span class="log-summary__label">Entries logged</span>
       </div>
       <div>
         <span class="log-summary__value">01</span>
@@ -65,6 +65,7 @@
       <aside class="content-rail" aria-label="Dev-log sections">
         <p>In this log</p>
         <ol>
+          <li><a href="#entry-003">Scientific-plotting skill</a></li>
           <li><a href="#entry-002">Dev-log page</a></li>
           <li><a href="#entry-001">Website build</a></li>
           <li><a href="#protocol">Principles</a></li>
@@ -73,6 +74,48 @@
 
       <div class="log-feed">
         <!-- CONTENT START: Dev-log entries -->
+        <article class="log-entry" id="entry-003">
+          <header class="log-entry__header">
+            <div>
+              <p class="section-index">Entry 003 / Skill assignment</p>
+              <h2>Developing a scientific-plotting skill.</h2>
+            </div>
+            <time datetime="2026-09-21">21 Sep<br>2026</time>
+          </header>
+
+          <dl class="log-meta">
+            <div>
+              <dt>Agent</dt>
+              <dd>Pi coding agent · GPT-5.6 via MIT Parley</dd>
+            </div>
+            <div>
+              <dt>Mode</dt>
+              <dd>Standards synthesis, skill authoring, documentation, and structural verification</dd>
+            </div>
+            <div>
+              <dt>Artifact</dt>
+              <dd>Reusable scientific-plotting skill for this course portfolio</dd>
+            </div>
+          </dl>
+
+          <div class="log-entry__body">
+            <section>
+              <h3>Why I created it</h3>
+              <p>I wanted the agent to follow a consistent, auditable workflow whenever it helps turn scientific results into figures. Rather than restating plotting constraints in each request, I asked it to create a reusable course skill that makes the assumptions behind grouping, summarizing, transforming, and interpreting data explicit.</p>
+            </section>
+            <section>
+              <h3>How the agent helped</h3>
+              <p>The agent adapted my existing scientific plotting standard into step-by-step instructions and a verification checklist. The skill directs an agent to identify authoritative granular data, preserve provenance and complete configuration boundaries, show individual replicates with appropriate summaries, keep missing measurements missing, justify transformations, distinguish direct observations from unsupported interpretations, and save enough code and metadata to regenerate each figure. Dataset-specific filenames became general roles such as per-observation data, configuration metadata, and study records, while domain-specific accounting examples became checks for totals, nested components, and overlapping classifications. The core safeguards—no silent pooling, transparent replicate counts, bounded claims, and reproducible provenance—were retained.</p>
+            </section>
+            <section>
+              <h3>My role + reflection</h3>
+              <p>The skill can prompt careful procedure, but it cannot decide whether a grouping, transformation, summary, or interpretation is scientifically warranted. I still have to understand the experiment, choose and defend those decisions, inspect the underlying data and final figure, and determine whether the evaluation design supports a claim. The file and page structure were checked during this update, but the skill has not yet been exercised on a separate plotting task.</p>
+            </section>
+          </div>
+
+          <p class="log-entry__outcome"><span>Outcome</span> A reusable plotting workflow that carries my existing standards into future agent-assisted figure work while keeping scientific judgment and final verification with me.</p>
+        </article>
+
         <article class="log-entry" id="entry-002">
           <header class="log-entry__header">
             <div>
