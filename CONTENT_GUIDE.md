@@ -46,21 +46,11 @@ Create `assets/images/` within this repository when needed. Use relative paths, 
 
 ## `project.html`
 
-### Project title and summary
+### Project lightning talk
 
-Update `Project title and summary` as the working title and scope become more concrete.
+The project page is organized as a five-beat, three-minute scrolling talk. Keep the section order and `data-talk-section` values synchronized with the sticky route so the active-step indicator continues to work.
 
-### Project question and context
-
-Expand `Project question and context` with the motivation, relevant technical background, and connection to 16.S893.
-
-### Proposed concept
-
-Expand `Proposed concept` with further analysis methods, technical detail, constraints, or links to related work.
-
-### Course project direction
-
-Expand `Course project direction` after the project format, process, and intended outcomes are decided. Milestones, references, and visuals can be added within this marked section or as new marked sections.
+Revise the content inside `Project lightning talk` as the research develops. Favor one spoken idea per section, short audience-facing text, and diagrams or structured comparisons over long prose. Preserve scientifically important qualifications from the current proposal, particularly the non-uniqueness of the source-and-vorticity representation and the distinction between representation, extraction, and evaluation.
 
 ## `dev-log.html`
 
@@ -70,7 +60,7 @@ Update `Dev-log overview` when the logging method or summary counts change. Keep
 
 ### Dev-log entries
 
-Add each new interaction to the top of `Dev-log entries`, using the existing articles as a template. Give every article a unique descending ID (`entry-003`, `entry-004`, and so on), a valid `<time datetime="YYYY-MM-DD">`, and four clear disclosures:
+Add each new entry to the top of `Dev-log entries`, using the existing articles as a template. Give every article the next unique ID (`entry-003`, `entry-004`, and so on), a valid `<time datetime="YYYY-MM-DD">`, and four clear disclosures:
 
 - the agent or tool used;
 - what you asked it to do;

@@ -59,4 +59,44 @@
       launchSatellite();
     }
   });
+
+  const talkSections = [...document.querySelectorAll("[data-talk-section]")];
+  const talkLinks = [...document.querySelectorAll("[data-talk-link]")];
+  const talkProgress = document.querySelector(".talk-progress span");
+
+  if (talkSections.length && talkLinks.length && "IntersectionObserver" in window) {
+    const setActiveTalkSection = (sectionId) => {
+      const sectionIndex = talkSections.findIndex(
+        (section) => section.getAttribute("data-talk-section") === sectionId
+      );
+
+      talkLinks.forEach((link) => {
+        const isActive = link.getAttribute("data-talk-link") === sectionId;
+        if (isActive) {
+          link.setAttribute("aria-current", "step");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
+
+      if (talkProgress && sectionIndex >= 0) {
+        talkProgress.style.transform = `scaleX(${(sectionIndex + 1) / talkSections.length})`;
+      }
+    };
+
+    const talkObserver = new IntersectionObserver((entries) => {
+      const visibleSection = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+      if (visibleSection) {
+        setActiveTalkSection(visibleSection.target.getAttribute("data-talk-section"));
+      }
+    }, {
+      rootMargin: "-24% 0px -54% 0px",
+      threshold: [0, 0.1, 0.25, 0.5]
+    });
+
+    talkSections.forEach((section) => talkObserver.observe(section));
+  }
 })();

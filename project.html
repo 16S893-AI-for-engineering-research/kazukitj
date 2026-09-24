@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Proposed course project for MIT 16.S893.">
+  <meta name="description" content="Kazuki Tojo's 16.S893 project proposal: a virtual research lab for extracting flow mechanisms from CFD solutions.">
   <title>Course Project — Field Notes / 16.S893</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/site.js" defer></script>
 </head>
-<body>
+<body class="project-talk-page">
   <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="site-header">
@@ -24,77 +24,191 @@
     </nav>
   </header>
 
-  <main id="main-content" class="page-shell interior-page">
-    <header class="page-intro page-intro--project">
-      <div>
-        <p class="eyebrow"><span>Page 02</span><span>Project proposal</span></p>
-        <h1>Course <em>project.</em></h1>
+  <main id="main-content" class="page-shell project-talk">
+    <!-- CONTENT START: Project lightning talk -->
+    <header class="talk-hero">
+      <div class="talk-hero__copy">
+        <p class="eyebrow"><span>Project proposal</span><span>3-minute route</span></p>
+        <p class="talk-kicker">A virtual research lab for CFD</p>
+        <h1>Teaching AI to see <em>why a flow behaves the way it does.</em></h1>
+        <p class="talk-deck">Can teams of AI agents turn a complex CFD solution into a simpler representation that exposes its underlying flow mechanisms?</p>
+        <div class="talk-hero__actions">
+          <a class="button button--primary" href="#problem">Start the talk <span aria-hidden="true">↓</span></a>
+          <span class="talk-duration"><strong>03:00</strong> / five beats</span>
+        </div>
       </div>
-      <p class="page-intro__note">A preliminary 16.S893 idea connecting LLMs with flow-mechanism analysis in CFD.</p>
+      <aside class="talk-thesis" aria-label="Project thesis">
+        <p class="section-index">The proposal in one line</p>
+        <p>Convert CFD into <strong>source and vorticity fields</strong>, then ask coordinated agents to extract the mechanisms that matter.</p>
+        <div class="talk-thesis__signal" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </aside>
     </header>
 
-    <div class="project-title-card">
-      <span class="project-title-card__status"><i aria-hidden="true"></i> Initial idea / under discussion</span>
-      <!-- CONTENT START: Project title and summary -->
-      <div>
-        <p class="section-index">Working title</p>
-        <h2>LLMs for exploring flow analysis methods.</h2>
-        <p>An early idea to use LLMs to automate the exploration of methods an AI agent could use to recognize flow mechanisms in CFD solutions.</p>
-      </div>
-      <!-- CONTENT END: Project title and summary -->
-      <span class="project-title-card__code" aria-hidden="true">P–893</span>
-    </div>
-
-    <div class="content-layout">
-      <aside class="content-rail" aria-label="Page sections">
-        <p>Proposal map</p>
+    <div class="talk-layout">
+      <aside class="talk-rail" aria-label="Lightning talk sections">
+        <p>Three-minute route</p>
         <ol>
-          <li><a href="#question">Question</a></li>
-          <li><a href="#proposal">Approaches</a></li>
-          <li><a href="#outcomes">Course idea</a></li>
+          <li><a href="#problem" data-talk-link="problem"><span>00:00</span> The bottleneck</a></li>
+          <li><a href="#question" data-talk-link="question"><span>00:35</span> The question</a></li>
+          <li><a href="#idea" data-talk-link="idea"><span>01:10</span> The project bet</a></li>
+          <li><a href="#lab" data-talk-link="lab"><span>01:55</span> The virtual lab</a></li>
+          <li><a href="#outcome" data-talk-link="outcome"><span>02:35</span> What I will learn</a></li>
         </ol>
+        <div class="talk-progress" aria-hidden="true"><span></span></div>
       </aside>
 
-      <article class="content-stack">
-        <!-- CONTENT START: Project question and context -->
-        <section class="content-section" id="question">
-          <p class="section-index">01 / Question + context</p>
-          <h2>How should an AI agent recognize flow mechanisms?</h2>
-          <div class="prose">
-            <p><strong>In my new AI-agent project, one of the most important tasks is determining which method is best for identifying flow mechanisms within CFD solutions.</strong></p>
-            <p>The direction is not yet concrete and is still under discussion with my advisor, but it creates an opportunity to explore how LLMs might help investigate the question itself.</p>
+      <article class="talk-sequence">
+        <section class="talk-section talk-section--problem" id="problem" data-talk-section="problem">
+          <div class="talk-section__number" aria-hidden="true">01</div>
+          <div class="talk-section__content">
+            <p class="section-index">00:00 / The bottleneck</p>
+            <h2>CFD output has outgrown our capacity to interpret it.</h2>
+            <p class="talk-lead">Simulation capability has advanced for decades. Human analysis capacity has not kept pace.</p>
+            <div class="mechanism-strip" aria-label="Examples of flow mechanisms">
+              <span>Boundary-layer separation</span>
+              <span>Vortices</span>
+              <span>Mixing</span>
+              <span>Shocks</span>
+            </div>
+            <p class="talk-support">These fundamental mechanisms often sit at the root of turbomachinery problems. My PhD research asks how AI and machine learning can help extract that information from CFD solutions.</p>
+            <p class="talk-takeaway"><span>Takeaway</span> The bottleneck is no longer producing flow fields; it is understanding them.</p>
           </div>
         </section>
-        <!-- CONTENT END: Project question and context -->
 
-        <!-- CONTENT START: Proposed concept -->
-        <section class="content-section" id="proposal">
-          <p class="section-index">02 / Possible approaches</p>
-          <h2>Explore beyond the human workflow.</h2>
-          <div class="prose">
-            <p>One possibility is to emulate how a human expert analyzes a solution: make a hypothesis, analyze the data, and perhaps run more cases under different conditions to confirm or rule out that hypothesis.</p>
-            <p>An AI agent may also be capable of—and perhaps better suited to—methods that human experts do not typically use. We want to explore many possibilities, including:</p>
-            <ul>
-              <li><strong>Human-style analysis</strong> — Form hypotheses, inspect data, and run additional cases.</li>
-              <li><strong>Adjoint calculations</strong> — Examine the sensitivity of flow variables.</li>
-              <li><strong>Simplified comparisons</strong> — Match RANS CFD solutions with solutions using source and sink terms to view the case through another lens.</li>
-            </ul>
+        <section class="talk-section" id="question" data-talk-section="question">
+          <div class="talk-section__number" aria-hidden="true">02</div>
+          <div class="talk-section__content">
+            <p class="section-index">00:35 / The research question</p>
+            <h2>What is the best analysis method for AI itself?</h2>
+            <p class="talk-lead">An AI system does not have to copy the way a human expert works.</p>
+            <div class="approach-split">
+              <article>
+                <p class="approach-split__label">Human-style loop</p>
+                <h3>Observe → hypothesize → test → repeat</h3>
+                <p>Examine the solution, form a hypothesis, run a test, and iterate.</p>
+              </article>
+              <article>
+                <p class="approach-split__label">AI-native possibility</p>
+                <h3>Probe the solution directly and quantitatively</h3>
+                <p>Use representations and calculations that may be less intuitive to a person but more effective for an agent.</p>
+              </article>
+            </div>
+            <p class="talk-takeaway"><span>Question</span> Instead of automating an expert's routine, can agents discover a better one?</p>
           </div>
         </section>
-        <!-- CONTENT END: Proposed concept -->
 
-        <!-- CONTENT START: Course project direction -->
-        <section class="content-section" id="outcomes">
-          <p class="section-index">03 / Course project idea</p>
-          <h2>Automate the exploration itself.</h2>
-          <div class="prose">
-            <p>For 16.S893, I could use LLMs to automate the exploration of these analysis methods. The goal would be to investigate which approaches an AI agent could use rather than committing in advance to the process a human expert would follow.</p>
-            <p>This is ambitious, but it would be interesting to see what is possible.</p>
+        <section class="talk-section talk-section--dark" id="idea" data-talk-section="idea">
+          <div class="talk-section__number" aria-hidden="true">03</div>
+          <div class="talk-section__content">
+            <p class="section-index">01:10 / The project bet</p>
+            <h2>Simplify the flow before asking what it means.</h2>
+            <p class="talk-lead">My 16.S893 project will explore an ambitious strand: represent a CFD solution using source and vorticity fields, then extract flow-mechanism information from that representation.</p>
+
+            <ol class="representation-flow" aria-label="Proposed analysis sequence">
+              <li>
+                <span>Input</span>
+                <strong>CFD solution</strong>
+                <small>A detailed, high-dimensional flow field</small>
+              </li>
+              <li>
+                <span>Representation</span>
+                <strong>Sources + vorticity</strong>
+                <small>A simpler physical description</small>
+              </li>
+              <li>
+                <span>Interpretation</span>
+                <strong>Flow mechanisms</strong>
+                <small>The useful information we want to recover</small>
+              </li>
+            </ol>
+
+            <div class="open-questions">
+              <article>
+                <span>Unknown 01</span>
+                <h3>The representation is not unique.</h3>
+                <p>Which arrangement and magnitude of sources and vortices makes the mechanisms most accessible?</p>
+              </article>
+              <article>
+                <span>Unknown 02</span>
+                <h3>Extraction is a second problem.</h3>
+                <p>Once the representation exists, how should an agent turn it into reliable mechanism information?</p>
+              </article>
+            </div>
           </div>
         </section>
-        <!-- CONTENT END: Course project direction -->
+
+        <section class="talk-section" id="lab" data-talk-section="lab">
+          <div class="talk-section__number" aria-hidden="true">04</div>
+          <div class="talk-section__content">
+            <p class="section-index">01:55 / The virtual research lab</p>
+            <h2>Let agent teams search, test, critique, and improve.</h2>
+            <p class="talk-lead">Rather than assigning one agent the entire problem, I will explore a structured lab in which teams have distinct responsibilities and feedback travels upstream.</p>
+
+            <div class="lab-map" aria-label="Proposed virtual research lab">
+              <article class="lab-team lab-team--a">
+                <span>Team A</span>
+                <h3>Represent</h3>
+                <p>Generate different non-unique source-and-vorticity descriptions of the CFD solution.</p>
+              </article>
+              <div class="lab-arrow lab-arrow--ab" aria-hidden="true">→</div>
+              <article class="lab-team lab-team--b">
+                <span>Team B</span>
+                <h3>Extract</h3>
+                <p>Use each representation to identify the underlying flow mechanisms.</p>
+              </article>
+              <div class="lab-arrow lab-arrow--bc" aria-hidden="true">→</div>
+              <article class="lab-team lab-team--c">
+                <span>Team C</span>
+                <h3>Evaluate</h3>
+                <p>Hold the mechanism “answers,” assess Team B, and send feedback through the chain.</p>
+              </article>
+              <article class="lab-team lab-team--d">
+                <span>Team D</span>
+                <h3>Critique</h3>
+                <p>Challenge assumptions and methods throughout the research process.</p>
+              </article>
+              <article class="lab-team lab-team--e">
+                <span>Team E</span>
+                <h3>Ground</h3>
+                <p>Use Greitzer and Drela's textbooks to guide the other teams with domain literature.</p>
+              </article>
+              <div class="lab-feedback" aria-hidden="true"><span>Feedback loop</span></div>
+            </div>
+            <p class="talk-takeaway"><span>Structure</span> Separate roles make the reasoning easier to inspect, compare, and improve.</p>
+          </div>
+        </section>
+
+        <section class="talk-section talk-section--close" id="outcome" data-talk-section="outcome">
+          <div class="talk-section__number" aria-hidden="true">05</div>
+          <div class="talk-section__content">
+            <p class="section-index">02:35 / What I will learn</p>
+            <h2>The goal is not one answer. It is a research process that can improve.</h2>
+            <div class="learning-grid">
+              <article>
+                <span>01</span>
+                <p>Which simplified representations make flow mechanisms easier to recover?</p>
+              </article>
+              <article>
+                <span>02</span>
+                <p>Which agent roles and feedback loops produce useful scientific progress?</p>
+              </article>
+              <article>
+                <span>03</span>
+                <p>Where do AI-native methods outperform imitation of a human workflow—and where do they fail?</p>
+              </article>
+            </div>
+            <blockquote>
+              <p>Can agents discover a representation that makes the physics easier to see?</p>
+            </blockquote>
+            <p class="talk-support">Agent capabilities are changing on a timescale of months, so the architecture must remain flexible. The constant is the scientific question—and the need to evaluate every result against physical understanding.</p>
+            <a class="talk-restart" href="#problem">Restart the three-minute route <span aria-hidden="true">↑</span></a>
+          </div>
+        </section>
       </article>
     </div>
+    <!-- CONTENT END: Project lightning talk -->
 
     <nav class="next-page" aria-label="Continue to next page">
       <span>Next field note</span>
@@ -104,7 +218,7 @@
 
   <footer class="site-footer page-shell">
     <p>Portfolio field notes <span aria-hidden="true">/</span> MIT 16.S893</p>
-    <p class="footer-status"><span aria-hidden="true"></span> Assignment 01 / Working draft</p>
+    <p class="footer-status"><span aria-hidden="true"></span> Project proposal / Working research direction</p>
     <button class="footer-orbit" type="button" aria-label="Decorative orbit marker">
       <span aria-hidden="true"></span>
     </button>
