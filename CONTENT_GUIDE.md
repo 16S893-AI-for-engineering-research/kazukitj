@@ -46,11 +46,11 @@ Create `assets/images/` within this repository when needed. Use relative paths, 
 
 ## `project.html`
 
-### Project lightning talk
+### Project overview + lightning talk
 
-The project page is organized as a five-beat, three-minute scrolling talk. Keep the section order and `data-talk-section` values synchronized with the sticky route so the active-step indicator continues to work.
+The project page is organized as a five-part scrolling overview that also serves as a lightning-talk route. Keep the section order and `data-talk-section` values synchronized with the sticky route so the active-step indicator continues to work.
 
-Revise the content inside `Project lightning talk` as the research develops. Favor one spoken idea per section, short audience-facing text, and diagrams or structured comparisons over long prose. Preserve scientifically important qualifications from the current proposal, particularly the non-uniqueness of the source-and-vorticity representation and the distinction between representation, extraction, and evaluation.
+Revise the content inside `Project overview and lightning talk` as the research develops. Favor one clear spoken idea per section, short audience-facing text, and diagrams or structured comparisons over long prose. Preserve scientifically important qualifications from the current proposal, particularly the non-uniqueness of the source-and-vorticity representation and the distinction between representation, extraction, and evaluation.
 
 ## `dev-log.html`
 
