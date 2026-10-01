@@ -47,7 +47,7 @@
 
     <div class="log-summary" aria-label="Current dev-log summary">
       <div>
-        <span class="log-summary__value">04</span>
+        <span class="log-summary__value">05</span>
         <span class="log-summary__label">Entries logged</span>
       </div>
       <div>
@@ -65,6 +65,7 @@
       <aside class="content-rail" aria-label="Dev-log sections">
         <p>In this log</p>
         <ol>
+          <li><a href="#entry-005">Moore–Greitzer figure</a></li>
           <li><a href="#entry-004">Project proposal page</a></li>
           <li><a href="#entry-003">Scientific-plotting skill</a></li>
           <li><a href="#entry-002">Dev-log page</a></li>
@@ -75,6 +76,53 @@
 
       <div class="log-feed">
         <!-- CONTENT START: Dev-log entries -->
+        <article class="log-entry" id="entry-005">
+          <header class="log-entry__header">
+            <div>
+              <p class="section-index">Entry 005 / Numerical reproduction</p>
+              <h2>Reconstructing a nonlinear compressor-stall figure.</h2>
+            </div>
+            <time datetime="2026-10-01">01 Oct<br>2026</time>
+          </header>
+
+          <dl class="log-meta">
+            <div>
+              <dt>Agent</dt>
+              <dd>Pi coding agent · GPT-5.6 via MIT Parley</dd>
+            </div>
+            <div>
+              <dt>Mode</dt>
+              <dd>Equation transcription, curve digitization, spectral collocation, continuation, and numerical verification</dd>
+            </div>
+            <div>
+              <dt>Artifact</dt>
+              <dd>MATLAB reconstruction of Moore–Greitzer Figure 5</dd>
+            </div>
+          </dl>
+
+          <div class="log-entry__body">
+            <section>
+              <h3>What I was working on</h3>
+              <p>I set out to reproduce both panels of Figure 5 from Moore and Greitzer's 1986 post-stall compressor model. The task required more than copying the published lines: I wanted to reconstruct both the dashed analytical approximation and the solid nonlinear solution from the paper's equations, then compare the calculations with digitized points from the original figure.</p>
+            </section>
+            <section>
+              <h3>How the agent helped</h3>
+              <p>Pi transcribed the governing equations from the rendered paper, digitized 200 comparison points, and built a self-contained MATLAB calculation. It reconstructed the Galerkin curves analytically and solved the nonlinear traveling-wave equation by Fourier spectral collocation, damped Newton iteration, and continuation. It also exported vector PDFs and web-ready PNGs and reported residual, periodicity, refinement, and comparison checks.</p>
+            </section>
+            <section>
+              <h3>My role + reflection</h3>
+              <p>I specified that the complete figure—both operating points and both solution methods—had to be reproduced, and that digitized data could guide branch selection and phase alignment without replacing the governing calculation. The second nonlinear waveform retained a visible mismatch near its sharp extrema. Keeping that discrepancy exposed was important: the paper delegates some guide-vane and historical numerical details to earlier references, showing how incomplete method reporting can limit exact reproducibility even when the stated equations are solved accurately.</p>
+            </section>
+          </div>
+
+          <figure class="log-entry__figure">
+            <img class="content-image" src="assets/images/figure5-comparison.png" width="4000" height="4222" loading="lazy" alt="Two-panel comparison of calculated nonlinear and Galerkin compressor-stall curves with digitized data from Moore and Greitzer Figure 5">
+            <figcaption>Calculated nonlinear and Galerkin curves overlaid with digitized points from Moore and Greitzer (1986), Figure 5. The larger discrepancy in the lower panel is retained rather than tuned away.</figcaption>
+          </figure>
+
+          <p class="log-entry__outcome"><span>Outcome</span> A reproducible MATLAB reconstruction with equation-derived curves, retained digitized comparison data, numerical verification, and vector and web-ready figure exports.</p>
+        </article>
+
         <article class="log-entry" id="entry-004">
           <header class="log-entry__header">
             <div>
