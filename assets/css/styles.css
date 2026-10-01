@@ -811,23 +811,20 @@ figcaption {
 
 .talk-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
+  grid-template-columns: minmax(0, 1.55fr) minmax(260px, 0.45fr);
   align-items: center;
-  gap: clamp(48px, 7vw, 100px);
-  min-height: calc(100vh - 76px);
-  min-height: calc(100svh - 76px);
-  padding-block: clamp(72px, 9vw, 128px);
+  gap: clamp(44px, 6vw, 80px);
+  padding-block: clamp(76px, 8vw, 104px);
   border-bottom: 1px solid var(--line-strong);
 }
 
 .talk-hero h1 {
-  max-width: 900px;
-  margin-bottom: 30px;
-  font-size: clamp(3.6rem, 6.7vw, 7rem);
+  max-width: 820px;
+  margin-bottom: 26px;
+  font-size: clamp(3.2rem, 5.4vw, 5.5rem);
   font-weight: 800;
-  letter-spacing: -0.065em;
-  line-height: 0.92;
-  text-transform: uppercase;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
 }
 
 .talk-kicker {
@@ -841,13 +838,13 @@ figcaption {
 }
 
 .talk-deck {
-  max-width: 760px;
+  max-width: 700px;
   margin: 0;
-  padding-left: 22px;
-  border-left: 3px solid var(--orange);
+  padding-left: 18px;
+  border-left: 2px solid var(--orange);
   color: #3f4b5c;
-  font-size: clamp(1.12rem, 1.9vw, 1.42rem);
-  line-height: 1.5;
+  font-size: clamp(1.06rem, 1.6vw, 1.28rem);
+  line-height: 1.55;
 }
 
 .talk-hero__actions {
@@ -860,22 +857,15 @@ figcaption {
 
 .talk-thesis {
   position: relative;
-  padding: 30px;
+  padding: 26px;
   overflow: hidden;
-  color: var(--white);
-  background: var(--ink);
-  box-shadow: 12px 12px 0 var(--acid);
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.62);
 }
 
 .talk-thesis::before {
-  position: absolute;
-  inset: 0;
-  opacity: 0.12;
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.35) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.35) 1px, transparent 1px);
-  background-size: 24px 24px;
-  content: "";
+  content: none;
 }
 
 .talk-thesis > * {
@@ -883,36 +873,35 @@ figcaption {
 }
 
 .talk-thesis .section-index {
-  color: var(--cyan);
+  color: var(--orange);
 }
 
 .talk-thesis > p:nth-child(2) {
   margin: 0;
   font-family: var(--display);
-  font-size: clamp(1.85rem, 3vw, 3rem);
+  font-size: clamp(1.45rem, 2.2vw, 2.1rem);
   font-weight: 700;
-  letter-spacing: -0.035em;
-  line-height: 1.05;
-  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
 }
 
 .talk-thesis strong {
-  color: var(--acid);
+  color: var(--orange);
 }
 
 .talk-thesis__signal {
   display: flex;
   align-items: end;
-  gap: 7px;
-  height: 60px;
-  margin-top: 32px;
+  gap: 6px;
+  height: 28px;
+  margin-top: 24px;
+  opacity: 0.4;
 }
 
 .talk-thesis__signal span {
-  width: 14px;
+  width: 9px;
   height: 24%;
-  background: var(--orange);
-  animation: talk-signal 1.6s ease-in-out infinite alternate;
+  background: var(--cyan);
 }
 
 .talk-thesis__signal span:nth-child(2) { height: 68%; animation-delay: -0.4s; }
@@ -922,8 +911,8 @@ figcaption {
 
 .talk-layout {
   display: grid;
-  grid-template-columns: 190px minmax(0, 1fr);
-  gap: clamp(42px, 7vw, 100px);
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: clamp(42px, 6vw, 76px);
 }
 
 .talk-rail {
@@ -931,7 +920,7 @@ figcaption {
   position: sticky;
   z-index: 5;
   top: 112px;
-  margin-top: 88px;
+  margin-top: 72px;
   padding-top: 14px;
   border-top: 2px solid var(--ink);
 }
@@ -1007,23 +996,21 @@ figcaption {
 
 .talk-section {
   display: grid;
-  grid-template-columns: clamp(70px, 9vw, 120px) minmax(0, 1fr);
-  gap: clamp(24px, 4vw, 56px);
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: clamp(22px, 3vw, 40px);
   align-items: start;
-  min-height: calc(100vh - 76px);
-  min-height: calc(100svh - 76px);
-  padding-block: clamp(88px, 11vh, 128px);
+  padding-block: clamp(68px, 8vw, 92px);
   border-bottom: 1px solid var(--line-strong);
   scroll-margin-top: 76px;
 }
 
 .talk-section__number {
-  color: rgba(20, 35, 58, 0.14);
+  color: rgba(20, 35, 58, 0.24);
   font-family: var(--display);
-  font-size: clamp(4.5rem, 9vw, 8rem);
+  font-size: clamp(2.6rem, 4vw, 3.5rem);
   font-weight: 800;
-  letter-spacing: -0.09em;
-  line-height: 0.75;
+  letter-spacing: -0.06em;
+  line-height: 0.9;
 }
 
 .talk-section__content {
@@ -1031,22 +1018,21 @@ figcaption {
 }
 
 .talk-section h2 {
-  max-width: 870px;
-  margin-bottom: 28px;
-  font-size: clamp(3rem, 5.7vw, 6.4rem);
+  max-width: 800px;
+  margin-bottom: 24px;
+  font-size: clamp(2.5rem, 4.3vw, 4.3rem);
   font-weight: 800;
-  letter-spacing: -0.06em;
-  line-height: 0.94;
-  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  line-height: 1.02;
 }
 
 .talk-lead {
   max-width: 800px;
-  margin: 0 0 40px;
+  margin: 0 0 32px;
   color: #3f4b5c;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.4rem, 2.4vw, 2.15rem);
-  line-height: 1.35;
+  font-size: clamp(1.25rem, 1.9vw, 1.7rem);
+  line-height: 1.42;
 }
 
 .talk-support {
@@ -1059,16 +1045,16 @@ figcaption {
 .mechanism-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 42px;
-  border: 1px solid var(--ink);
+  margin-top: 34px;
+  border: 1px solid var(--line-strong);
 }
 
 .mechanism-strip span {
   display: flex;
   align-items: end;
-  min-height: 140px;
-  padding: 18px;
-  border-right: 1px solid var(--ink);
+  min-height: 104px;
+  padding: 16px;
+  border-right: 1px solid var(--line-strong);
   font-family: var(--mono);
   font-size: 0.7rem;
   font-weight: 800;
@@ -1080,18 +1066,18 @@ figcaption {
   border-right: 0;
 }
 
-.mechanism-strip span:nth-child(2) { background: var(--acid); }
-.mechanism-strip span:nth-child(3) { color: var(--white); background: var(--ink); }
-.mechanism-strip span:nth-child(4) { background: rgba(255, 91, 54, 0.15); }
+.mechanism-strip span:nth-child(2) { background: rgba(217, 243, 106, 0.28); }
+.mechanism-strip span:nth-child(3) { background: rgba(24, 185, 200, 0.1); }
+.mechanism-strip span:nth-child(4) { background: rgba(255, 91, 54, 0.08); }
 
 .talk-takeaway {
   display: flex;
   gap: 18px;
-  margin: 34px 0 0;
-  padding: 18px 20px;
-  border-left: 4px solid var(--orange);
-  background: var(--white);
-  font-weight: 700;
+  margin: 28px 0 0;
+  padding: 16px 18px;
+  border-left: 2px solid var(--orange);
+  background: rgba(255, 255, 255, 0.62);
+  font-weight: 600;
 }
 
 .talk-takeaway span {
@@ -1106,17 +1092,18 @@ figcaption {
 .approach-split {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line-strong);
 }
 
 .approach-split article {
-  min-height: 300px;
-  padding: clamp(24px, 4vw, 42px);
+  min-height: 220px;
+  padding: clamp(24px, 3vw, 34px);
 }
 
 .approach-split article + article {
-  color: var(--white);
-  background: var(--ink);
+  border-left: 1px solid var(--line-strong);
+  color: var(--ink);
+  background: rgba(24, 185, 200, 0.08);
 }
 
 .approach-split__label,
@@ -1131,15 +1118,14 @@ figcaption {
 }
 
 .approach-split article + article .approach-split__label {
-  color: var(--acid);
+  color: var(--cyan);
 }
 
 .approach-split h3 {
-  margin: 48px 0 18px;
-  font-size: clamp(1.8rem, 3vw, 3rem);
+  margin: 32px 0 16px;
+  font-size: clamp(1.55rem, 2.3vw, 2.3rem);
   letter-spacing: -0.04em;
-  line-height: 1;
-  text-transform: uppercase;
+  line-height: 1.08;
 }
 
 .approach-split p:last-child {
@@ -1149,44 +1135,45 @@ figcaption {
 }
 
 .approach-split article + article p:last-child {
-  color: #bdc5cf;
+  color: var(--muted);
 }
 
 .talk-section--dark {
   position: relative;
-  margin-block: 34px;
-  padding-inline: clamp(30px, 5vw, 64px);
-  color: var(--white);
-  background: var(--ink);
-  border-bottom: 0;
-  box-shadow: 12px 12px 0 var(--orange);
+  margin-block: 0;
+  padding-inline: clamp(24px, 3vw, 40px);
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+  background: rgba(20, 35, 58, 0.035);
+  box-shadow: none;
 }
 
 .talk-section--dark .talk-section__number {
-  color: rgba(217, 243, 106, 0.18);
+  color: rgba(20, 35, 58, 0.24);
 }
 
 .talk-section--dark .section-index {
-  color: var(--cyan);
+  color: var(--orange);
 }
 
 .talk-section--dark .talk-lead {
-  color: #d9dee5;
+  color: #3f4b5c;
 }
 
 .representation-flow {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  margin: 50px 0;
+  gap: 28px;
+  margin: 38px 0;
   padding: 0;
   list-style: none;
 }
 
 .representation-flow li {
   position: relative;
-  min-height: 200px;
-  padding: 24px;
+  min-height: 160px;
+  padding: 20px;
+  border: 1px solid var(--line-strong);
   color: var(--ink);
   background: var(--white);
 }
@@ -1194,9 +1181,9 @@ figcaption {
 .representation-flow li::after {
   position: absolute;
   top: 50%;
-  right: -32px;
-  color: var(--acid);
-  font-size: 1.8rem;
+  right: -23px;
+  color: var(--orange);
+  font-size: 1.4rem;
   content: "→";
   transform: translateY(-50%);
 }
@@ -1217,12 +1204,11 @@ figcaption {
 
 .representation-flow strong {
   display: block;
-  margin: 35px 0 10px;
+  margin: 26px 0 10px;
   font-family: var(--display);
-  font-size: clamp(1.7rem, 2.5vw, 2.7rem);
+  font-size: clamp(1.45rem, 2vw, 2.1rem);
   letter-spacing: -0.04em;
-  line-height: 1;
-  text-transform: uppercase;
+  line-height: 1.08;
 }
 
 .representation-flow small {
@@ -1234,63 +1220,61 @@ figcaption {
 .open-questions {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid var(--line-strong);
 }
 
 .open-questions article {
-  padding: 28px 28px 0 0;
+  padding: 24px 24px 0 0;
 }
 
 .open-questions article + article {
-  padding-left: 28px;
-  border-left: 1px solid rgba(255, 255, 255, 0.25);
+  padding-left: 24px;
+  border-left: 1px solid var(--line-strong);
 }
 
 .open-questions h3 {
-  margin: 24px 0 12px;
-  font-size: clamp(1.7rem, 2.8vw, 2.8rem);
+  margin: 20px 0 10px;
+  font-size: clamp(1.45rem, 2vw, 2.1rem);
   letter-spacing: -0.04em;
-  text-transform: uppercase;
 }
 
 .open-questions p {
   margin: 0;
-  color: #bdc5cf;
+  color: var(--muted);
 }
 
 .lab-map {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 38px minmax(0, 1fr) 38px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) 30px minmax(0, 1fr) 30px minmax(0, 1fr);
   grid-template-areas:
     "a ab b bc c"
     "feedback feedback feedback feedback feedback"
     "d d d e e";
-  gap: 16px 0;
-  margin-top: 46px;
+  gap: 12px 0;
+  margin-top: 38px;
 }
 
 .lab-team {
-  min-height: 220px;
-  padding: 24px;
-  border: 1px solid var(--ink);
+  min-height: 170px;
+  padding: 20px;
+  border: 1px solid var(--line-strong);
   background: var(--white);
 }
 
 .lab-team--a { grid-area: a; }
-.lab-team--b { grid-area: b; background: var(--acid); }
-.lab-team--c { grid-area: c; color: var(--white); background: var(--ink); }
+.lab-team--b { grid-area: b; background: rgba(217, 243, 106, 0.28); }
+.lab-team--c { grid-area: c; background: rgba(20, 35, 58, 0.06); }
 .lab-team--d { grid-area: d; margin-right: 8px; background: rgba(24, 185, 200, 0.12); }
 .lab-team--e { grid-area: e; margin-left: 8px; background: rgba(255, 91, 54, 0.12); }
 
 .lab-team--c > span {
-  color: var(--acid);
+  color: var(--orange);
 }
 
 .lab-team h3 {
-  margin: 42px 0 12px;
-  font-size: clamp(1.8rem, 2.8vw, 2.8rem);
+  margin: 28px 0 10px;
+  font-size: clamp(1.45rem, 2vw, 2.1rem);
   letter-spacing: -0.04em;
-  text-transform: uppercase;
 }
 
 .lab-team p {
@@ -1301,7 +1285,7 @@ figcaption {
 }
 
 .lab-team--c p {
-  color: #bdc5cf;
+  color: var(--muted);
 }
 
 .lab-arrow {
@@ -1717,7 +1701,7 @@ figcaption {
   }
 
   .mechanism-strip span:nth-child(-n + 2) {
-    border-bottom: 1px solid var(--ink);
+    border-bottom: 1px solid var(--line-strong);
   }
 
   .lab-map {
@@ -1853,13 +1837,13 @@ figcaption {
   }
 
   .talk-hero h1 {
-    font-size: clamp(3.2rem, 15vw, 5rem);
+    font-size: clamp(2.75rem, 12vw, 4rem);
   }
 
   .talk-thesis {
-    margin-right: 10px;
-    padding: 24px;
-    box-shadow: 8px 8px 0 var(--acid);
+    margin-right: 0;
+    padding: 22px;
+    box-shadow: none;
   }
 
   .talk-hero__actions,
@@ -1875,8 +1859,8 @@ figcaption {
 
   .talk-section {
     grid-template-columns: 1fr;
-    min-height: 90svh;
-    padding-block: 76px;
+    min-height: auto;
+    padding-block: 58px;
     scroll-margin-top: 58px;
   }
 
@@ -1885,11 +1869,11 @@ figcaption {
   }
 
   .talk-section h2 {
-    font-size: clamp(2.65rem, 12vw, 4.2rem);
+    font-size: clamp(2.25rem, 10vw, 3.5rem);
   }
 
   .talk-lead {
-    font-size: clamp(1.25rem, 6vw, 1.7rem);
+    font-size: clamp(1.15rem, 5vw, 1.5rem);
   }
 
   .mechanism-strip {
@@ -1899,7 +1883,7 @@ figcaption {
   .mechanism-strip span {
     min-height: 92px;
     border-right: 0;
-    border-bottom: 1px solid var(--ink);
+    border-bottom: 1px solid var(--line-strong);
   }
 
   .mechanism-strip span:last-child {
@@ -1918,19 +1902,24 @@ figcaption {
   }
 
   .approach-split article {
-    min-height: 260px;
+    min-height: auto;
+  }
+
+  .approach-split article + article {
+    border-top: 1px solid var(--line-strong);
+    border-left: 0;
   }
 
   .talk-section--dark {
-    margin-block: 20px;
-    margin-right: 8px;
-    padding-inline: 24px;
-    box-shadow: 8px 8px 0 var(--orange);
+    margin-block: 0;
+    margin-right: 0;
+    padding-inline: 20px;
+    box-shadow: none;
   }
 
   .representation-flow {
     grid-template-columns: 1fr;
-    gap: 42px;
+    gap: 36px;
   }
 
   .representation-flow li::after {
@@ -1947,7 +1936,7 @@ figcaption {
   }
 
   .open-questions article + article {
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid var(--line-strong);
   }
 
   .lab-map {
@@ -1967,6 +1956,10 @@ figcaption {
   .lab-team--d,
   .lab-team--e {
     margin: 0;
+  }
+
+  .lab-team {
+    min-height: auto;
   }
 
   .lab-arrow {
