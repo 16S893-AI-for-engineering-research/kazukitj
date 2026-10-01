@@ -56,22 +56,11 @@ Revise the content inside `Project overview` as the research develops. Favor one
 
 ### Dev-log overview
 
-Update `Dev-log overview` when the logging method or summary counts change. Keep the interaction count synchronized with the number of entries.
+Keep the introductory note brief and focused on the page as a course record.
 
 ### Dev-log entries
 
-Add each new entry to the top of `Dev-log entries`, using the existing articles as a template. Give every article the next unique ID (`entry-003`, `entry-004`, and so on), a valid `<time datetime="YYYY-MM-DD">`, and four clear disclosures:
-
-- the agent or tool used;
-- what you asked it to do;
-- how it contributed;
-- your role, verification, and reflection.
-
-Also update the in-page navigation and summary count whenever an entry is added. Keep prompt descriptions concise and remove private or sensitive information before publishing. When reporting Pi session activity, count user-role message records as messages typed and assistant `toolCall` content items as tool calls; include the relevant session dates and timezone.
-
-### Dev-log principles
-
-Edit `Dev-log principles` only if the disclosure and review protocol changes.
+Keep entries in chronological order from oldest to newest. Each entry should contain a date, a short title, and one first-person paragraph recording the work done in class and any useful reflection or learning. An entry may also include one relevant image or link. Give every article the next unique ID (`entry-006`, `entry-007`, and so on), use a valid `<time datetime="YYYY-MM-DD">`, and add its link to the bottom of the numbered in-page navigation.
 
 ## Review checklist
 
