@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A comprehensive log of work done throughout MIT 16.S893.">
   <title>Dev-log — Field Notes / 16.S893</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20261001-2">
   <script src="assets/js/site.js" defer></script>
 </head>
 <body>
@@ -37,22 +37,34 @@
       <aside class="content-rail" aria-label="Dev-log sections">
         <p>In this log</p>
         <ol>
-          <li><a href="#entry-001">Website build</a></li>
-          <li><a href="#entry-002">Dev-log page</a></li>
-          <li><a href="#entry-003">Scientific-plotting skill</a></li>
-          <li><a href="#entry-004">Project proposal page</a></li>
-          <li><a href="#entry-005">Moore–Greitzer figure</a></li>
+          <li><a href="#entry-004" data-entry="04">Moore–Greitzer figure</a></li>
+          <li><a href="#entry-003" data-entry="03">Scientific plotting skill</a></li>
+          <li><a href="#entry-002" data-entry="02">Dev-log page</a></li>
+          <li><a href="#entry-001" data-entry="01">Website build</a></li>
         </ol>
       </aside>
 
       <div class="log-feed">
         <!-- CONTENT START: Dev-log entries -->
-        <article class="log-entry" id="entry-001">
+        <article class="log-entry" id="entry-004">
           <header class="log-entry__header">
-            <time datetime="2026-09-15">15 September 2026</time>
-            <h2>Building the course website.</h2>
+            <time datetime="2026-10-01">1 October 2026</time>
+            <h2>Reconstructing a nonlinear compressor stall figure.</h2>
           </header>
-          <p class="log-entry__paragraph">For the first assignment, I built a new multi-page portfolio for the course using Pi through MIT Parley. I chose the overall scope, approved the visual direction, and supplied the personal and research content before reviewing the finished site. The exercise showed me how quickly an agent can assemble a substantial web artifact, but also how important it is to define boundaries, review factual claims, and check the result at both desktop and phone sizes.</p>
+          <p class="log-entry__paragraph">This assignment was to reproduce a figure from a scientific paper. As I've been examining compressor rotating stall for the past two years, I decided to look into <a href="https://doi.org/10.1115/1.3239887">Moore and Greitzer's 1986 paper on post-stall compressor operating behaviour</a>. The paper's equations outline analytical Galerkin equations, as well as equations for the nonlinear travelling wave problem, which were both solved using MATLAB (written by GPT 5.6 Sol) and plotted over the original data (digitised by GPT 5.6 Sol). The most interesting learning is that one of the four curves involves an adjustment to the nonlinear equations that was mentioned but not fully specified in the paper, which meant that the reproduced results did not perfectly overlap with the original plot.</p>
+
+          <figure class="log-entry__figure">
+            <img class="content-image" src="assets/images/figure5-comparison.png" width="4000" height="4222" loading="lazy" alt="Two-panel comparison of calculated nonlinear and Galerkin compressor-stall curves with digitised data from Moore and Greitzer Figure 5">
+            <figcaption>Calculated nonlinear and Galerkin curves overlaid with digitised points from Moore and Greitzer (1986), Figure 5.</figcaption>
+          </figure>
+        </article>
+
+        <article class="log-entry" id="entry-003">
+          <header class="log-entry__header">
+            <time datetime="2026-09-21">21 September 2026</time>
+            <h2>Developing a scientific plotting skill.</h2>
+          </header>
+          <p class="log-entry__paragraph">The class emphasises the importance of having a skills markdown file when using AI agents. I established a <code>SKILL.md</code> file containing my requirements and preferences for generating scientific plots. In doing this, I realised the importance of having robust human oversight over the writing of a skills files, rather than giving autonomy to AI agents.</p>
         </article>
 
         <article class="log-entry" id="entry-002">
@@ -60,36 +72,15 @@
             <time datetime="2026-09-16">16 September 2026</time>
             <h2>Adding a dev-log to the site.</h2>
           </header>
-          <p class="log-entry__paragraph">I added a dev-log page to the portfolio and initially treated it as a detailed record of how I had used AI agents, including message and tool-call counts. I later realized that the course dev-log was intended more broadly as my own record of what we did and learned in class. That misunderstanding prompted me to simplify the page into a human course journal rather than an audit of agent activity.</p>
+          <p class="log-entry__paragraph">A dev-log page was a requirement of this class to track the work done by ourselves and AI agents. I initially misinterpreted this dev-log as document specifically to log the contributions of the AI agents, including prompts and tool-call counts. As such, the development of this dev-log page, via GPT 5.6 Sol, has gone through several iterations over a couple of weeks.</p>
         </article>
 
-        <article class="log-entry" id="entry-003">
+        <article class="log-entry" id="entry-001">
           <header class="log-entry__header">
-            <time datetime="2026-09-21">21 September 2026</time>
-            <h2>Developing a scientific-plotting skill.</h2>
+            <time datetime="2026-09-15">15 September 2026</time>
+            <h2>Building the course website.</h2>
           </header>
-          <p class="log-entry__paragraph">For the skill-writing exercise, I adapted my existing scientific-plotting preferences into a reusable set of instructions for future agent-assisted figure work. The skill emphasizes preserving data provenance, showing individual measurements alongside summaries, documenting transformations, and keeping interpretation tied to the evidence. Writing it made clear that a procedural checklist can improve consistency, but it cannot replace my responsibility for deciding whether a scientific comparison or conclusion is actually justified.</p>
-        </article>
-
-        <article class="log-entry" id="entry-004">
-          <header class="log-entry__header">
-            <time datetime="2026-09-24">24 September 2026</time>
-            <h2>Turning the proposal into a clear project narrative.</h2>
-          </header>
-          <p class="log-entry__paragraph">I turned my project proposal into a concise scrolling page that could explain the research clearly on the website while also supporting a short in-class presentation. Distilling the proposal into four sections helped clarify the progression from the CFD-analysis bottleneck to the research question, the source-and-vorticity representation, and the proposed multi-agent virtual lab. I also learned that simplifying a technical narrative is useful only if the important scientific qualifications remain visible.</p>
-        </article>
-
-        <article class="log-entry" id="entry-005">
-          <header class="log-entry__header">
-            <time datetime="2026-10-01">1 October 2026</time>
-            <h2>Reconstructing a nonlinear compressor-stall figure.</h2>
-          </header>
-          <p class="log-entry__paragraph">For the figure-recreation assignment, I reproduced both panels of Figure 5 from <a href="https://doi.org/10.1115/1.3239887">Moore and Greitzer's 1986 post-stall compressor paper</a>. I used the paper's equations to calculate the analytical Galerkin curves and solve the nonlinear traveling-wave problem, then compared both results with points digitized from the publication. The sharper second waveform did not match perfectly, which highlighted how difficult exact reproduction becomes when a paper delegates important numerical details to earlier references.</p>
-
-          <figure class="log-entry__figure">
-            <img class="content-image" src="assets/images/figure5-comparison.png" width="4000" height="4222" loading="lazy" alt="Two-panel comparison of calculated nonlinear and Galerkin compressor-stall curves with digitized data from Moore and Greitzer Figure 5">
-            <figcaption>Calculated nonlinear and Galerkin curves overlaid with digitized points from Moore and Greitzer (1986), Figure 5.</figcaption>
-          </figure>
+          <p class="log-entry__paragraph">The first assignment was the build a portfolio website for the course using Pi. Using API provided by MIT Parley, I expressed my broad vision of the website to Pi, and supplied information for the personal and research contents of the website. The agent, GPT 5.6 Sol, one-shot the website, although it should be noted that I ensured the input prompt was thorough and targeted.</p>
         </article>
         <!-- CONTENT END: Dev-log entries -->
       </div>

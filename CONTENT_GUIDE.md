@@ -60,7 +60,7 @@ Keep the introductory note brief and focused on the page as a course record.
 
 ### Dev-log entries
 
-Keep entries in chronological order from oldest to newest. Each entry should contain a date, a short title, and one first-person paragraph recording the work done in class and any useful reflection or learning. An entry may also include one relevant image or link. Give every article the next unique ID (`entry-006`, `entry-007`, and so on), use a valid `<time datetime="YYYY-MM-DD">`, and add its link to the bottom of the numbered in-page navigation.
+Keep entries in reverse chronological order, with the newest at the top and the oldest at the bottom. Each entry should contain a date, a short title, and one first-person paragraph recording the work done in class and any useful reflection or learning. An entry may also include one relevant image or link. Give every article the next unique ID (`entry-005`, `entry-006`, and so on), use a valid `<time datetime="YYYY-MM-DD">`, and add its link to the top of the numbered in-page navigation. Set the link's `data-entry` value to the entry number so the displayed numbering remains chronological even though the list is newest first.
 
 ## Review checklist
 

@@ -634,7 +634,7 @@ h2 em {
 .content-rail a::before {
   color: var(--orange);
   font-family: var(--mono);
-  content: "0" counter(rail);
+  content: attr(data-entry);
 }
 
 .content-rail a:hover {
@@ -1386,7 +1386,14 @@ figcaption {
 
 .log-entry__header time {
   display: block;
+  position: static;
+  width: auto;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  aspect-ratio: auto;
   color: var(--orange);
+  background: transparent;
   font-family: var(--mono);
   font-size: 0.72rem;
   font-weight: 700;
@@ -1400,6 +1407,11 @@ figcaption {
   color: #3f4b5c;
   font-size: 1.02rem;
   line-height: 1.75;
+}
+
+.log-entry__paragraph code {
+  font-family: var(--mono);
+  font-size: 0.9em;
 }
 
 .log-entry__figure {
