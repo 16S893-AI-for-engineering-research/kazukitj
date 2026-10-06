@@ -37,6 +37,7 @@
       <aside class="content-rail" aria-label="Dev-log sections">
         <p>In this log</p>
         <ol>
+          <li><a href="#entry-005" data-entry="05">Project testing ideas</a></li>
           <li><a href="#entry-004" data-entry="04">Moore–Greitzer figure</a></li>
           <li><a href="#entry-003" data-entry="03">Scientific plotting skill</a></li>
           <li><a href="#entry-002" data-entry="02">Dev-log page</a></li>
@@ -46,6 +47,14 @@
 
       <div class="log-feed">
         <!-- CONTENT START: Dev-log entries -->
+        <article class="log-entry" id="entry-005">
+          <header class="log-entry__header">
+            <time datetime="2026-10-06">6 October 2026</time>
+            <h2>Developing testing ideas for the course project.</h2>
+          </header>
+          <p class="log-entry__paragraph">Whilst I have not implemented a test yet as I have to finalise the scientific approach to my source and vorticity field representation and interpretation project, I have two ideas that may be appropriate for a range of eventual implementations. First, with anything involving sources/sinks and vortices Green's theorem is a good check in the sense of calculating the circulation along and flux through a curve that wraps around the point. The tolerance for this check would be of a magnitude larger than the magnitude of numerical noise. Another broader check would be to calculate the residual (difference) of the simplified source and vorticity field representation against the ground truth CFD solution. Perfect agreement between the two are not expected due to the fact that the source and vorticity field representation is inherently a simplification of the CFD solution, but a tolerance several order of magnitude smaller than the normalised state variables would likely be a useful starting point.</p>
+        </article>
+
         <article class="log-entry" id="entry-004">
           <header class="log-entry__header">
             <time datetime="2026-10-01">1 October 2026</time>
