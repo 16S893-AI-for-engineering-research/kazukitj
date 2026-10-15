@@ -1393,6 +1393,10 @@ figcaption {
   line-height: 1.75;
 }
 
+.log-entry__paragraph + .log-entry__paragraph {
+  margin-top: 18px;
+}
+
 .log-entry__paragraph code {
   font-family: var(--mono);
   font-size: 0.9em;

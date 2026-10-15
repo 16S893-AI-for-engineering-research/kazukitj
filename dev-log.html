@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A comprehensive log of work done throughout MIT 16.S893.">
   <title>Dev-log — Field Notes / 16.S893</title>
-  <link rel="stylesheet" href="assets/css/styles.css?v=20261001-2">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20261014">
   <script src="assets/js/site.js" defer></script>
 </head>
 <body>
@@ -37,6 +37,7 @@
       <aside class="content-rail" aria-label="Dev-log sections">
         <p>In this log</p>
         <ol>
+          <li><a href="#entry-006" data-entry="06">Project agent workflow</a></li>
           <li><a href="#entry-005" data-entry="05">Project testing ideas</a></li>
           <li><a href="#entry-004" data-entry="04">Moore–Greitzer figure</a></li>
           <li><a href="#entry-003" data-entry="03">Scientific plotting skill</a></li>
@@ -47,6 +48,22 @@
 
       <div class="log-feed">
         <!-- CONTENT START: Dev-log entries -->
+        <article class="log-entry" id="entry-006">
+          <header class="log-entry__header">
+            <time datetime="2026-10-14">14 October 2026</time>
+            <h2>Rebuilding my project workflow.</h2>
+          </header>
+          <p class="log-entry__paragraph">After working on my project using only Codex as the agent, my project code became bloated to the point where any change created more problems than solved. I thus restarted from scratch using the project structure taught in this class, using agents and subagents with skill and tool files.</p>
+
+          <p class="log-entry__paragraph">I first started with a skill file that is referred to before every and any response by any agent in the project. This skill file specifies response outputs that are concise and includes no jargon, and if specialised terms are necessary, they must be defined to the (human) user. This was an issue I was having previously with Codex, especially at higher context window percentages, where the responses would become very generic and full of jargon. Implementing this skill substantially improved the responses of the agents.</p>
+
+          <p class="log-entry__paragraph">Then, I implemented a planner agent and a plan-executer agent to plan and execute plans with consistency. The planning agent must always be Opus-level to ensure the formulation of high quality plans, and they are instructed to divide tasks to Sonnet-level items. The plan-executer agent is also Opus-level, but they then delegate the Sonnet-level tasks to Sonnet-level subagents that run in parallel. There is also a coding skill that they refer to that specifies no excess complexity and no performative rigour that introduces more problems than solves or prevents.</p>
+
+          <p class="log-entry__paragraph">I also made a plotter agent to make plots with consistent formatting via PyTecplot and Tecplot360. Similar to the plan-executer agent, the plot is formulated by an Opus-level agent and the plotting task is delegated to Sonnet-level agents that follow deterministic tool files.</p>
+
+          <p class="log-entry__paragraph">Overall, I’ve spent about $80 in API costs which is not cheap but has been well worth it as it has enabled me to perform extremely consistent, targeted and most importantly sustainable code development that I can maintain oversight of.</p>
+        </article>
+
         <article class="log-entry" id="entry-005">
           <header class="log-entry__header">
             <time datetime="2026-10-06">6 October 2026</time>
